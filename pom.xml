@@ -57,6 +57,13 @@
         <version>0.0.8-SNAPSHOT</version>
       </dependency>
       <dependency>
+        <groupId>com.mongodb.casbah</groupId>
+        <artifactId>casbah_${scala.version}</artifactId>
+        <version>2.1.5-1</version>
+        <scope>compile</scope>
+        <type>pom</type>
+      </dependency>
+      <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>4.8.2</version>
