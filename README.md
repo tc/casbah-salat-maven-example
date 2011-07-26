@@ -1,6 +1,7 @@
 # Casbah Salat Maven Example Project
 
 pom.xml:
+
 ```
 <repository>
   <id>repo.novus snaps</id>
@@ -22,3 +23,6 @@ pom.xml:
 mvn compile
 mvn test
 ```
+
+## Code
+Take a look at App.scala for example salat code.
