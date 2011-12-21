@@ -9,7 +9,7 @@
     <name>casbah-salat-example</name>
 
     <properties>
-      <scala.version>2.9.0-1</scala.version>
+      <scala.version>2.9.1</scala.version>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <repositories>
@@ -49,7 +49,7 @@
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
-        <version>0.9.28</version>
+        <version>1.0.0</version>
       </dependency>
       <dependency>
         <groupId>com.novus</groupId>
@@ -66,7 +66,7 @@
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>4.8.2</version>
+        <version>4.10</version>
         <scope>test</scope>
       </dependency>
     </dependencies>
@@ -110,7 +110,7 @@
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-surefire-plugin</artifactId>
-            <version>2.9</version>
+            <version>2.11</version>
             <configuration>
                 <argLine>-Xmx1024m</argLine>
                 <encoding>${project.build.sourceEncoding}</encoding>
