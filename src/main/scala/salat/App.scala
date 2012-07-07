@@ -4,7 +4,7 @@ import com.novus.salat._
 import com.novus.salat.dao._
 import com.novus.salat.global._
 
-import org.mongodb.casbah.Imports._
+import com.mongodb.casbah.Imports._
 
 case class Employee(_id:ObjectId = new ObjectId, name: String, age: Option[Int]=None, annual_salary: Option[BigDecimal]=None)
 
