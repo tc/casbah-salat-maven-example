@@ -22,23 +22,14 @@
          <url>http://repo2.maven.org/maven2/</url>
         </repository>
         <repository>
-          <id>scala-tools.org</id>
-          <name>Scala-Tools Maven2 Repository</name>
-          <url>http://scala-tools.org/repo-releases/</url>
+          <id>sonatype releases</id>
+          <url>https://oss.sonatype.org/content/repositories/releases</url>
         </repository>
         <repository>
-          <id>repo.novus snaps</id>
-          <url>http://repo.novus.com/snapshots/</url>
+          <id>sonatype snapshots</id>
+          <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </repository>
     </repositories>
-
-    <pluginRepositories>
-        <pluginRepository>
-          <id>scala-tools.org</id>
-          <name>Scala-Tools Maven2 Repository</name>
-          <url>http://scala-tools.org/repo-releases/</url>
-        </pluginRepository>
-    </pluginRepositories>
 
     <dependencies>
       <dependency>
@@ -49,17 +40,17 @@
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.6</version>
       </dependency>
       <dependency>
         <groupId>com.novus</groupId>
         <artifactId>salat-core_${scala.version}</artifactId>
-        <version>0.0.8-SNAPSHOT</version>
+        <version>1.9.0</version>
       </dependency>
       <dependency>
-        <groupId>com.mongodb.casbah</groupId>
+        <groupId>org.mongodb</groupId>
         <artifactId>casbah_${scala.version}</artifactId>
-        <version>2.1.5-1</version>
+        <version>2.4.1</version>
         <scope>compile</scope>
         <type>pom</type>
       </dependency>
@@ -74,9 +65,9 @@
     <build>
       <plugins>
         <plugin>
-          <groupId>org.scala-tools</groupId>
-          <artifactId>maven-scala-plugin</artifactId>
-          <version>2.15.2</version>
+          <groupId>net.alchim31.maven</groupId>
+          <artifactId>scala-maven-plugin</artifactId>
+          <version>3.0.2</version>
           <executions>
             <execution>
               <goals>
@@ -86,7 +77,7 @@
             </execution>
           </executions>
           <configuration>
-            <scalaVersion>${scala.version}</scalaVersion>
+            <scalaVersion>${scala.compiler.version}</scalaVersion>
             <encoding>${project.build.sourceEncoding}</encoding>
             <charset>${project.build.sourceEncoding}</charset>
             <args>
