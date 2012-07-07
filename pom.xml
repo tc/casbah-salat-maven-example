@@ -13,16 +13,6 @@
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <repositories>
-<!-- 
-        <repository>
-          <id>apache</id>
-          <url>https://repository.apache.org/content/repositories/releases</url>
-        </repository>      
-        <repository>
-         <id>maven.org</id>
-         <url>http://repo1.maven.org/maven2/</url>
-        </repository>
--->        
         <repository>
           <id>sonatype releases</id>
           <url>https://oss.sonatype.org/content/repositories/releases</url>
@@ -30,7 +20,7 @@
         <repository>
           <id>sonatype snapshots</id>
           <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </repository>     
+        </repository>
     </repositories>
 
     <dependencies>
@@ -56,14 +46,14 @@
             <artifactId>casbah_${scala.version}</artifactId>
           </exclusion>
       </exclusions>
-      </dependency>  
+      </dependency>
       <dependency>
         <groupId>org.mongodb</groupId>
         <artifactId>casbah_${scala.version}</artifactId>
         <version>2.4.1</version>
         <scope>compile</scope>
         <type>pom</type>
-      </dependency>   
+      </dependency>
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
