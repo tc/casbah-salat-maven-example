@@ -32,12 +32,12 @@
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
-        <version>1.0.6</version>
+        <version>1.0.7</version>
       </dependency>
       <dependency>
         <groupId>com.novus</groupId>
         <artifactId>salat_${scala.version}</artifactId>
-        <version>1.9.0</version>
+        <version>1.9.1</version>
         <scope>compile</scope>
         <type>pom</type>
         <exclusions>
@@ -67,7 +67,7 @@
         <plugin>
           <groupId>net.alchim31.maven</groupId>
           <artifactId>scala-maven-plugin</artifactId>
-          <version>3.0.2</version>
+          <version>3.1.0</version>
           <executions>
             <execution>
               <goals>
